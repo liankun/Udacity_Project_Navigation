@@ -29,10 +29,16 @@ The Project is done in windows 64bit environment.
 - trained_agent.mp4 : shows a performance of a trained agent
 - Banana_Windows_x86_64 : The unity environment for the project 
 
-Necessary Packets:
-- python 3.6.9
-- numpy 1.17.0
-- pytorch 1.0.1 py3.6_cuda100_cudnn7_1
-- unityagents 0.4.0
+Environment setting (windows):
+- create virtual environment: conda create --name project_navigation python=3.6.9
+- activate environment: conda activate project_navigation
+- install neccessary packets:
+ 1. install pytorch: conda install pytorch==1.0.1 torchvision==0.2.2 cudatoolkit=10.0 -c pytorch 
+ 2. install unityagents: pip install unityagents
+ 3. install matplotlib: conda install matplotlib
+- clone the repository: git clone https://github.com/liankun/Udacity_Project_Navigation.git
+- cd Udacity_Project_Navigation
+- create IPython kernel: python -m ipykernel install --user --name project_navigation --display-name "project_navigation"
+Now you can run the project by using the project_navigation environment in the jupyter notebook.
 
 
